@@ -1,5 +1,5 @@
-   # =========================================================
-# PYTHON CACHE
+# =========================================================
+# PYTHON CACHE FILES
 # =========================================================
 
 __pycache__/
@@ -15,21 +15,41 @@ __pycache__/
 .env
 venv/
 env/
+.venv/
 
 
 # =========================================================
-# ZIP FILES
+# ZIP / BUILD FILES
 # =========================================================
 
 *.zip
 lambda.zip
+build/
+dist/
 
 
 # =========================================================
-# INSTALLED PYTHON PACKAGES
+# IDE / EDITOR FILES
+# =========================================================
+
+.vscode/
+.idea/
+
+
+# =========================================================
+# OS FILES
+# =========================================================
+
+.DS_Store
+Thumbs.db
+
+
+# =========================================================
+# PYTHON DEPENDENCIES (GLOBAL INSTALLS)
 # =========================================================
 
 *.dist-info/
+*.egg-info/
 
 boto3/
 botocore/
@@ -46,12 +66,18 @@ idna/
 asn1crypto/
 scramp/
 jmespath/
-include/
+six.py
+typing_extensions.py
 
 
 # =========================================================
-# LAMBDA PROJECT DEPENDENCIES
+# LAMBDA PROJECT DEPENDENCIES (IMPORTANT)
 # =========================================================
+
+LAMBDA_PROJECT/bin/
+LAMBDA_PROJECT/include/
+LAMBDA_PROJECT/lib/
+LAMBDA_PROJECT/__pycache__/
 
 LAMBDA_PROJECT/boto3/
 LAMBDA_PROJECT/botocore/
@@ -68,31 +94,18 @@ LAMBDA_PROJECT/idna/
 LAMBDA_PROJECT/asn1crypto/
 LAMBDA_PROJECT/scramp/
 LAMBDA_PROJECT/jmespath/
-LAMBDA_PROJECT/include/
-LAMBDA_PROJECT/*.dist-info/
+
+LAMBDA_PROJECT/six.py
+LAMBDA_PROJECT/typing_extensions.py
 
 
 # =========================================================
-# VSCODE
-# =========================================================
-
-.vscode/
-
-
-# =========================================================
-# MAC / WINDOWS SYSTEM FILES
-# =========================================================
-
-.DS_Store
-Thumbs.db
-
-
-# =========================================================
-# DATA FILES
+# DATA / DATABASE FILES
 # =========================================================
 
 data/
 db/
+*.db
 
 
 # =========================================================
@@ -100,13 +113,6 @@ db/
 # =========================================================
 
 .streamlit/
-
-
-# =========================================================
-# DOCKER
-# =========================================================
-
-docker-compose.yml
 
 
 # =========================================================
